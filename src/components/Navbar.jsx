@@ -43,3 +43,4 @@ function Navbar({ isDark, onToggleTheme }) {
 }
 
 export default Navbar;
+
