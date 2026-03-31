@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import CTASection from './components/CTASection';
@@ -12,16 +11,10 @@ import TestimonialsSection from './components/TestimonialsSection';
 import TrustSection from './components/TrustSection';
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    const html = document.documentElement;
-    html.classList.toggle('dark', isDark);
-  }, [isDark]);
 
   return (
     <div className="min-h-screen bg-white font-body text-ink transition-colors dark:bg-slate-950">
-      <Navbar isDark={isDark} onToggleTheme={() => setIsDark((prev) => !prev)} />
+      <Navbar />
       <main>
         <Hero />
         <TrustSection />

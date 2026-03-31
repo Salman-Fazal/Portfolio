@@ -1,6 +1,6 @@
 import { navLinks } from '../data/portfolioData';
 
-function Navbar({ isDark, onToggleTheme }) {
+function Navbar({ }) {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur-md dark:border-slate-800 dark:bg-slate-950/80">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 lg:px-8">
@@ -22,14 +22,6 @@ function Navbar({ isDark, onToggleTheme }) {
         </ul>
 
         <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={onToggleTheme}
-            aria-label="Toggle dark and light mode"
-            className="rounded-lg border border-slate-300 p-2 text-slate-700 transition hover:-translate-y-0.5 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
-          >
-            {isDark ? 'Light' : 'Dark'}
-          </button>
           <a
             href="#contact"
             className="rounded-lg bg-electric px-4 py-2 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-blue-700"
